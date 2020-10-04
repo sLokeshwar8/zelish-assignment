@@ -19,3 +19,8 @@
     padding: 20px;
     cursor: pointer;
 }
+
+.linkStyle {
+    color: '#000';
+    text-decoration: 'none';
+}

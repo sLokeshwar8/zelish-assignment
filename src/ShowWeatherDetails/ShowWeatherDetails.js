@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import classes from './showWeatherDetails.module.css';
+import classes from './ShowWeatherDetails.module.css';
 
 const ShowWeatherDetails = () => {
+
     const [hourlyWeather, setHourlyWeather] = useState();
+    
     let { date } = useParams();
+
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(function(position) {
             let api = '1bcc0795a92755240a52a51d802d234f';

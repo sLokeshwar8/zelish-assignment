@@ -37,3 +37,18 @@ ul > li {
     color: #888383;
     margin: 0;
 }
+
+.signupBtn {
+    border: 0;
+    padding: 10px 20px;
+    background: cornflowerblue;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.signupBtn:hover{
+    background: rgb(91, 134, 214);
+}

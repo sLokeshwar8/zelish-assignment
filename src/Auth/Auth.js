@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
 
 import Input from '../UI/Input/Input';
-import classes from './auth.module.css';
+import classes from './Auth.module.css';
 
 class Auth extends Component {
 
@@ -137,7 +137,7 @@ class Auth extends Component {
                     {errorMessage}
                 <form onSubmit={this.onSubmitHandler}>
                     {form}
-                    <button  type="submit">SIGNUP</button>
+                    <button className={classes.signupBtn} type="submit">SIGNUP</button>
                     {emptyFieldsErrorMsg}
                 </form>
                 <div className={classes.warningContainer}>

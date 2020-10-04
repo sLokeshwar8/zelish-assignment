@@ -1,9 +1,11 @@
 import React from 'react';
-import './App.css';
-import Weather from './Weather/weather';
-import ShowWeatherDetails from './ShowWeatherDetails/showWeatherDetails';
-import Auth from './Auth/auth';
 import { Route, Switch } from 'react-router-dom';
+//css
+import './App.css';
+//components
+import Weather from './Weather/Weather';
+import Auth from './Auth/Auth';
+import ShowWeatherDetails from './ShowWeatherDetails/ShowWeatherDetails';
 
 function App() {
   return (
