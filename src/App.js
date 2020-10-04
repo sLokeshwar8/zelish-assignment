@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Weather from './Weather/weather';
+import ShowWeatherDetails from './ShowWeatherDetails/showWeatherDetails';
+import Auth from './Auth/auth';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+          <Route path="/"  exact component={Auth}/>
+          <Route path="/weather"  component={Weather}/>
+          <Route path="/show/:date"  component={ShowWeatherDetails}/>
+        </Switch>
     </div>
   );
 }
